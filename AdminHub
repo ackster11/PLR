@@ -1,4 +1,4 @@
--- Admin Hub V1.2. By grumpster5000
+-- Admin Hub V1.1. By grumpster5000
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
@@ -14,13 +14,13 @@ local open = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Workspace
+ScreenGui.Parent = game.CoreGui
 
 main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 main.BackgroundTransparency = 0.240
-main.Position = UDim2.new(0.0123380637, 0, 0.811043024, 0)
+main.Position = UDim2.new(0.0129549662, 0, 0.792638123, 0)
 main.Size = UDim2.new(0, 307, 0, 147)
 main.Visible = false
 main.Active = true
@@ -31,7 +31,7 @@ title.Parent = main
 title.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 title.Size = UDim2.new(0, 307, 0, 27)
 title.Font = Enum.Font.GothamBold
-title.Text = "Admin Hub v1.2"
+title.Text = "Admin Hub v1.1"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 14.000
 
