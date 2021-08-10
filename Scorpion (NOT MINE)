@@ -119,7 +119,6 @@ if game.Players.LocalPlayer.PlayerGui.TestGui:FindFirstChild("TextButton") then
 end
 
 local Watermark = Instance.new("ScreenGui")
-syn.protect_gui(Watermark)
 local Holder = Instance.new("Frame")
 local RETARDEDLABELS = Instance.new("TextLabel")
 local RETARDEDLABELS_2 = Instance.new("TextLabel")
@@ -171,7 +170,6 @@ VersionLabel.TextSize = 14.000
 VersionLabel.TextXAlignment = Enum.TextXAlignment.Left
 
 local ScorpionAdmin = Instance.new("ScreenGui")
-syn.protect_gui(ScorpionAdmin)
 local Commands = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
@@ -2628,7 +2626,7 @@ function LocalPlayerChatted(msg)
 			admins[player.UserId] = {
 				settings = {prefix = prefix } 
 			}
-			chat(player.Name..", you have been granted admin permissions. Type "..prefix.."cmds to see all available commands for you! PLEASE READ ALL THE MESSAGES SENT IN CMDS")
+			chat(player.Name..", Noob. Type "..prefix.."cmds to see all available commands for you! PLEASE READ ALL THE MESSAGES SENT IN CMDS")
 		end
 		notify(arg1:sub(2,2):upper()..arg1:sub(3).."ed "..GetPlayerFromString(arg2)..".")
 	end
