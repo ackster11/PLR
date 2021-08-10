@@ -1376,7 +1376,7 @@ adminhub.Text = "Admin Hub"
 adminhub.TextColor3 = Color3.fromRGB(255, 255, 255)
 adminhub.TextSize = 12.000
 adminhub.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/RKTd6QGZ'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ackster11/PLR/main/AdminHubV1.1.txt'),true))()
 end)
 
 dropparty.Name = "dropparty"
