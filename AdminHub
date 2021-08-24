@@ -1,4 +1,4 @@
--- Admin Hub V1.3. By aMan#2781
+-- Admin Hub V1.4. By aMan#2781
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
@@ -32,7 +32,7 @@ title.Parent = main
 title.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 title.Size = UDim2.new(0, 307, 0, 27)
 title.Font = Enum.Font.GothamBold
-title.Text = "Admin Hub v1.3"
+title.Text = "Admin Hub v1.4"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 14.000
 
