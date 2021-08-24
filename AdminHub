@@ -1,4 +1,4 @@
--- Admin Hub V1.3. By grumpster5000
+-- Admin Hub V1.3. By aMan#2781
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
@@ -94,7 +94,7 @@ credits.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 credits.Position = UDim2.new(0, 0, 0.816326559, 0)
 credits.Size = UDim2.new(0, 307, 0, 27)
 credits.Font = Enum.Font.GothamBold
-credits.Text = "Made By grumpster5000"
+credits.Text = "Made By aMan#2781"
 credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 credits.TextSize = 14.000
 
