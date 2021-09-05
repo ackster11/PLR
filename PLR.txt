@@ -229,15 +229,12 @@ player.Character.HumanoidRootPart:Destroy()
 humanoidrootpart.Parent = player.Character
 player.Character:MoveTo(position)
 wait()
--- Remove this if you want to see yourself (others still won't see you)
-game.Players.LocalPlayer.Character.Torso.Transparency = 1
-game.Players.LocalPlayer.Character.Head.Transparency  = 1
-game.Players.LocalPlayer.Character["Left Arm"].Transparency = 1
-game.Players.LocalPlayer.Character["Right Arm"].Transparency = 1
-game.Players.LocalPlayer.Character["Left Leg"].Transparency = 1
-game.Players.LocalPlayer.Character["Right Leg"].Transparency = 1
-game.Players.LocalPlayer.Character.Humanoid:RemoveAccessories()
-game.Players.LocalPlayer.Character.Head.face:Remove()
+game.Players.LocalPlayer.Character.Torso.Transparency = 0.5
+game.Players.LocalPlayer.Character.Head.Transparency  = 0.5
+game.Players.LocalPlayer.Character["Left Arm"].Transparency = 0.5
+game.Players.LocalPlayer.Character["Right Arm"].Transparency = 0.5
+game.Players.LocalPlayer.Character["Left Leg"].Transparency = 0.5
+game.Players.LocalPlayer.Character["Right Leg"].Transparency = 0.5
 end)
 
 guns.Name = "guns"
