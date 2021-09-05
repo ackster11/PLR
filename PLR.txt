@@ -1393,7 +1393,7 @@ dropparty.MouseButton1Down:connect(function()
 workspace.Remote.TeamEvent:FireServer("Bright blue")
 game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
 
-Text = ("Drop Party, by grumpster5000. Note: at the current time, there is no way to disable this. I also reccomend using Anti Headache at the same time");
+Text = ("Drop Party, by aMan#2781. Note: at the current time, there is no way to disable this. I also reccomend using Anti Headache at the same time");
 
 Color = Color3.new(255,0,0);
 
