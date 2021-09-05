@@ -1,5 +1,5 @@
 -- Prison Life Rebirthed. By aMan#2781
--- For anyone who cares about the code. Alot of this gui has been skidded from Prison breaker V1.5 by jake11price.
+-- For anyone who cares about the code. Alot of exploits in this gui has been skidded from Prison breaker V1.5 by jake11price.
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
