@@ -1,4 +1,4 @@
--- Admin Hub V1.3. By aMan#2781
+-- Admin Hub v1.4. By aMan#2781
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
@@ -23,7 +23,7 @@ main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 main.BackgroundTransparency = 0.240
 main.Position = UDim2.new(0.754472494, 0, 0.775460243, 0)
 main.Size = UDim2.new(0, 307, 0, 147)
-main.Visible = false
+main.Visible = true
 main.Active = true
 main.Draggable = true
 
@@ -32,7 +32,7 @@ title.Parent = main
 title.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 title.Size = UDim2.new(0, 307, 0, 27)
 title.Font = Enum.Font.GothamBold
-title.Text = "Admin Hub v1.3"
+title.Text = "Admin Hub v1.4"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 14.000
 
@@ -143,6 +143,7 @@ openmain.Parent = ScreenGui
 openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 openmain.Position = UDim2.new(0.938309669, 0, 0.96441716, 0)
 openmain.Size = UDim2.new(0, 100, 0, 29)
+openmain.Visible = false
 openmain.Active = true
 openmain.Draggable = true
 
