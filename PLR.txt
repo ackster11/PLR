@@ -39,6 +39,9 @@ local nullware = Instance.new("TextButton")
 local destroyerv2 = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
+local shed = Instance.new("TextButton")
+local walkonwalls = Instance.new("TextButton")
+local aimbot = Instance.new("TextButton")
 
 --Properties:
 
@@ -1445,6 +1448,19 @@ angular.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/projetcs/AngularWalk"))();
 end)
 
+walkonwalls.Name = "walkonwalls"
+walkonwalls.Parent = main
+walkonwalls.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+walkonwalls.Position = UDim2.new(0.0295151882, 0, 0.848115026, 0)
+walkonwalls.Size = UDim2.new(0, 95, 0, 27)
+walkonwalls.Font = Enum.Font.GothamBlack
+walkonwalls.Text = "Walk On Walls"
+walkonwalls.TextColor3 = Color3.fromRGB(255, 255, 255)
+walkonwalls.TextSize = 12.000
+walkonwalls.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/geUZHr7B"))()
+end)
+
 nullware.Name = "nullware"
 nullware.Parent = main
 nullware.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
@@ -1458,6 +1474,19 @@ nullware.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/cDxtMDS2"))();
 end)
 
+shed.Name = "shed"
+shed.Parent = main
+shed.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+shed.Position = UDim2.new(0.350616097, 0, 0.848115026, 0)
+shed.Size = UDim2.new(0, 95, 0, 27)
+shed.Font = Enum.Font.GothamBlack
+shed.Text = "Shed's Bypasser"
+shed.TextColor3 = Color3.fromRGB(255, 255, 255)
+shed.TextSize = 12.000
+shed.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+end)
+
 destroyerv2.Name = "destroyerv2"
 destroyerv2.Parent = main
 destroyerv2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
@@ -1469,6 +1498,19 @@ destroyerv2.TextColor3 = Color3.fromRGB(255, 255, 255)
 destroyerv2.TextSize = 12.000
 destroyerv2.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/DTi4fbKh"))();
+end)
+
+aimbot.Name = "aimbot"
+aimbot.Parent = main
+aimbot.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+aimbot.Position = UDim2.new(0.677833319, 0, 0.848115026, 0)
+aimbot.Size = UDim2.new(0, 95, 0, 27)
+aimbot.Font = Enum.Font.GothamBlack
+aimbot.Text = "Aimbot"
+aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+aimbot.TextSize = 12.000
+aimbot.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-Script/main/Aimbot%20Script%20(Without%20FOV).lua"))();
 end)
 
 openmain.Name = "openmain"
