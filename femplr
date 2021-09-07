@@ -72,7 +72,7 @@ credits.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 credits.Position = UDim2.new(0, 0, 0.945794404, 0)
 credits.Size = UDim2.new(0, 327, 0, 29)
 credits.Font = Enum.Font.GothamBold
-credits.Text = "Made By aMan#2781"
+credits.Text = "Made By aMan#2781 | no hate"
 credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 credits.TextSize = 16.000
 
