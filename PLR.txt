@@ -4,7 +4,7 @@ local Players = game:GetService('Players')
 local Player = Players.LocalPlayer
 
 if Player.UserId == 2840532901 then
-loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ackster11/PLR/main/femplr"))();
 else
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ackster11/PLR/main/RealPLR"))();
 end
