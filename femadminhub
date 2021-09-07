@@ -1,0 +1,163 @@
+-- Admin Hub v1.4. By aMan#2781
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local reviz = Instance.new("TextButton")
+local lpa = Instance.new("TextButton")
+local septex = Instance.new("TextButton")
+local infyield = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local shattervast = Instance.new("TextButton")
+local scorpion = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.BackgroundTransparency = 0.240
+main.Position = UDim2.new(0.754472494, 0, 0.775460243, 0)
+main.Size = UDim2.new(0, 307, 0, 147)
+main.Visible = true
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+title.Size = UDim2.new(0, 307, 0, 27)
+title.Font = Enum.Font.GothamBold
+title.Text = "Femboy Hub v1.4"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 14.000
+
+reviz.Name = "reviz"
+reviz.Parent = main
+reviz.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+reviz.Position = UDim2.new(0.0325732902, 0, 0.231292516, 0)
+reviz.Size = UDim2.new(0, 87, 0, 27)
+reviz.Font = Enum.Font.GothamBold
+reviz.Text = "Reviz"
+reviz.TextColor3 = Color3.fromRGB(255, 255, 255)
+reviz.TextSize = 14.000
+reviz.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/CabRSSbG'))()
+end)
+
+lpa.Name = "lpa"
+lpa.Parent = main
+lpa.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+lpa.Position = UDim2.new(0.35830617, 0, 0.231292516, 0)
+lpa.Size = UDim2.new(0, 87, 0, 27)
+lpa.Font = Enum.Font.GothamBold
+lpa.Text = "LP Admin"
+lpa.TextColor3 = Color3.fromRGB(255, 255, 255)
+lpa.TextSize = 14.000
+lpa.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/2WU4S2uG'),true))()
+end)
+
+septex.Name = "septex"
+septex.Parent = main
+septex.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+septex.Position = UDim2.new(0.684039056, 0, 0.231292516, 0)
+septex.Size = UDim2.new(0, 87, 0, 27)
+septex.Font = Enum.Font.GothamBold
+septex.Text = "Septex"
+septex.TextColor3 = Color3.fromRGB(255, 255, 255)
+septex.TextSize = 14.000
+septex.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+end)
+
+infyield.Name = "infyield"
+infyield.Parent = main
+infyield.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+infyield.Position = UDim2.new(0.0325732902, 0, 0.503401339, 0)
+infyield.Size = UDim2.new(0, 87, 0, 27)
+infyield.Font = Enum.Font.GothamBold
+infyield.Text = "Infyield"
+infyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+infyield.TextSize = 14.000
+infyield.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+credits.Position = UDim2.new(0, 0, 0.816326559, 0)
+credits.Size = UDim2.new(0, 307, 0, 27)
+credits.Font = Enum.Font.GothamBold
+credits.Text = "Made By aMan#2781"
+credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+credits.TextSize = 14.000
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+close.Position = UDim2.new(0.912052095, 0, 0, 0)
+close.Size = UDim2.new(0, 27, 0, 27)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 14.000
+close.MouseButton1Down:connect(function()
+	main.Visible = false
+	openmain.Visible = true
+end)
+
+shattervast.Name = "shattervast"
+shattervast.Parent = main
+shattervast.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+shattervast.Position = UDim2.new(0.35830617, 0, 0.503401399, 0)
+shattervast.Size = UDim2.new(0, 87, 0, 27)
+shattervast.Font = Enum.Font.GothamBold
+shattervast.Text = "Shattervast"
+shattervast.TextColor3 = Color3.fromRGB(255, 255, 255)
+shattervast.TextSize = 14.000
+shattervast.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/iL4NRDux'))()
+end)
+
+scorpion.Name = "scorpion"
+scorpion.Parent = main
+scorpion.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+scorpion.Position = UDim2.new(0.684039056, 0, 0.503401399, 0)
+scorpion.Size = UDim2.new(0, 87, 0, 27)
+scorpion.Font = Enum.Font.GothamBold
+scorpion.Text = "Scorpion"
+scorpion.TextColor3 = Color3.fromRGB(255, 255, 255)
+scorpion.TextSize = 14.000
+scorpion.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ackster11/PLR/main/Scorpion%20(NOT%20MINE)'))()
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openmain.Position = UDim2.new(0.938309669, 0, 0.96441716, 0)
+openmain.Size = UDim2.new(0, 100, 0, 29)
+openmain.Visible = false
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+open.Position = UDim2.new(4.76837158e-07, 0, 0, 0)
+open.Size = UDim2.new(0, 100, 0, 29)
+open.Font = Enum.Font.GothamBold
+open.Text = "OPEN"
+open.TextColor3 = Color3.fromRGB(0, 0, 0)
+open.TextSize = 15.000
+open.TextWrapped = true
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+end)
