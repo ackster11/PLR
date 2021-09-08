@@ -1,0 +1,40 @@
+--Thank you to everyone on WRD who helped me make this.
+--https://wearedevs.net/forum/t/22423
+workspace.Remote.TeamEvent:FireServer("Bright blue")
+game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
+
+Text = ("Drop Party v2, by aMan#2781. Press l to stop.");
+
+Color = Color3.new(255,0,0);
+
+FontSize = Enum.FontSize.Size24;
+
+})
+
+getgenv().LoopIsToggled = true
+
+local m = game.Players.LocalPlayer:GetMouse()
+db = true
+m.KeyDown:connect(function(k)
+    k = k:lower()
+    if k == "l" then
+        if db == true then
+            getgenv().LoopIsToggled = false
+        end
+    end
+end)
+
+while (LoopIsToggled) do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(918.77,100,2379.07)
+wait(0.5) 
+game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+local A_1 = "\66\114\111\121\111\117\98\97\100\100"
+local Event = game:GetService("Workspace").Remote.loadchar
+Event:InvokeServer(A_1)
+    wait(1) 
+end
+
+
+while true do
+    if not LoopIsToggled then break end
+end
