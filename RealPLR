@@ -967,26 +967,7 @@ dropparty.Text = "Drop Party"
 dropparty.TextColor3 = Color3.fromRGB(255, 255, 255)
 dropparty.TextSize = 12.000
 dropparty.MouseButton1Down:connect(function()
-workspace.Remote.TeamEvent:FireServer("Bright blue")
-game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
-
-Text = ("Drop Party, by aMan#2781. Note: at the current time, there is no way to disable this. I also reccomend using Anti Headache at the same time");
-
-Color = Color3.new(255,0,0);
-
-FontSize = Enum.FontSize.Size24;
-
-})
-
-while true do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(918.77,100,2379.07)
-wait(0.5) 
-game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
-local A_1 = "\66\114\111\121\111\117\98\97\100\100"
-local Event = game:GetService("Workspace").Remote.loadchar
-Event:InvokeServer(A_1)
-    wait(1) 
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ackster11/PLR/main/dropparty"))();
 end)
 
 antiheadache.Name = "antiheadache"
