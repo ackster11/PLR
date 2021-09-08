@@ -1,10 +1,10 @@
---this is a troll on a friend. if you want to see the code
+--If you want to see the code
 --https://raw.githubusercontent.com/ackster11/PLR/main/RealPLR
 local Players = game:GetService('Players')
 local Player = Players.LocalPlayer
 
-if Player.UserId == 2840532901 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ackster11/PLR/main/femplr"))();
+if Player.UserId == 1 then
+
 else
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ackster11/PLR/main/RealPLR"))();
 end
