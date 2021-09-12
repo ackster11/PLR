@@ -3,7 +3,7 @@
 workspace.Remote.TeamEvent:FireServer("Bright blue")
 game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
 
-Text = ("Drop Party v2, by aMan#2781. Press l to stop.");
+Text = ("Drop Party v2, by aMan#2781. Press l to stop. This is just a place holder script until a better script can be found.");
 
 Color = Color3.new(255,0,0);
 
