@@ -1,4 +1,4 @@
--- Prison Life Rebirthed. By aMan#2781
+-- Prison Life Rebirthed.
 -- For anyone who cares about the code. Alot of exploits in this gui has been skidded from Prison breaker V1.5 by jake11price.
 -- I don't pride myself on my code, so don't comment or dm me about the skidding. I couldn't care less and it's just a waste of my time.
 local ScreenGui = Instance.new("ScreenGui")
@@ -32,7 +32,7 @@ local FastTaser = Instance.new("TextButton")
 local hitbox = Instance.new("TextButton")
 local reall = Instance.new("TextButton")
 local rewalls = Instance.new("TextButton")
-local adminhub = Instance.new("TextButton")
+local detector = Instance.new("TextButton")
 local dropparty = Instance.new("TextButton")
 local antiheadache = Instance.new("TextButton")
 local angular = Instance.new("TextButton")
@@ -945,17 +945,133 @@ wait(0.1)
 game.Workspace.Prison_Cafeteria.boxes:Remove()
 end)
 
-adminhub.Name = "adminhub"
-adminhub.Parent = main
-adminhub.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
-adminhub.Position = UDim2.new(0.0295151882, 0, 0.698582232, 0)
-adminhub.Size = UDim2.new(0, 95, 0, 27)
-adminhub.Font = Enum.Font.GothamBlack
-adminhub.Text = "Admin Hub"
-adminhub.TextColor3 = Color3.fromRGB(255, 255, 255)
-adminhub.TextSize = 12.000
-adminhub.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/ackster11/PLR/main/AdminHub'),true))()
+detector.Name = "detector"
+detector.Parent = main
+detector.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+detector.Position = UDim2.new(0.0295151882, 0, 0.698582232, 0)
+detector.Size = UDim2.new(0, 95, 0, 27)
+detector.Font = Enum.Font.GothamBlack
+detector.Text = "Detector"
+detector.TextColor3 = Color3.fromRGB(255, 255, 255)
+detector.TextSize = 12.000
+detector.MouseButton1Down:connect(function()
+-- this script is not mine.
+game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
+
+Text = ("Press X to toggle the detector.");
+
+Color = Color3.new(255,255,0);
+
+FontSize = Enum.FontSize.Size24;
+
+})
+local p = game:GetService("Players").LocalPlayer
+
+local check = true 
+local msg
+
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Hostile Detector:";
+            Text = tostring(msg).."\nRed = Hostile";
+        })
+
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if gameProcessedEvent then return end
+
+    if inputObject.KeyCode == Enum.KeyCode.X then
+
+        if check == true then 
+            msg = "Off"
+            check = false
+        elseif check == false then 
+            msg = "On"
+            check = true
+        end
+
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Hostile Detector:";
+            Text = tostring(msg).."\nRed = Hostile";
+        })
+
+    end
+end)
+
+
+while wait(0.5) do
+
+if check == false then
+if game.Workspace.CurrentCamera:FindFirstChildOfClass("Folder") then
+	for i, v in pairs(game.Workspace.CurrentCamera:GetChildren()) do
+		v:Destroy()
+	end
+end
+end
+
+if check == true then
+
+if not game.Workspace.CurrentCamera:FindFirstChildOfClass("Folder") then
+espforlder = Instance.new("Folder")
+espforlder.Parent = game.Workspace.CurrentCamera
+end
+
+for _,v in pairs(game:GetService("Players"):GetChildren()) do
+pcall(function()
+if v ~= p and (v.Team == game:GetService("Teams").Inmates or v.Team == game:GetService("Teams").Criminals) and v.Character.Humanoid.Health > 0 then
+if v.Status.isHostile.Value == true or (v.Backpack:FindFirstChild("Crude Knife") or v.Backpack:FindFirstChild("Hammer") or v.Backpack:FindFirstChild("M4A1") or v.Backpack:FindFirstChild("M9") or v.Backpack:FindFirstChild("AK-47") or v.Backpack:FindFirstChild("Remington 870")) or (v.Character:FindFirstChild("Crude Knife") or v.Character:FindFirstChild("Hammer") or v.Character:FindFirstChild("M4A1") or v.Character:FindFirstChild("M9") or v.Character:FindFirstChild("AK-47") or v.Character:FindFirstChild("Remington 870")) then
+
+if espforlder:FindFirstChild(v.Name) then
+espforlder:FindFirstChild(v.Name):Destroy()
+end
+
+local bill = Instance.new("BillboardGui", espforlder)
+						bill.Name = v.Name
+						bill.AlwaysOnTop = true
+						bill.Size = UDim2.new(1,0,1,0)
+						bill.Adornee = v.Character.Head
+						local Frame = Instance.new('Frame',bill)
+						Frame.Active = true
+						Frame.BackgroundColor3 = Color3.new(255, 0, 0)
+						Frame.BackgroundTransparency = 0
+						Frame.BorderSizePixel = 0
+						Frame.AnchorPoint = Vector2.new(.5, .5)
+						Frame.Position = UDim2.new (0.5,0,0.5,0)
+						Frame.Size = UDim2.new (1,0,1,0)
+						Frame.Rotation = 0
+						v.Character.Humanoid.Died:Connect(function()
+							bill:Destroy()
+						end)
+
+else
+
+if espforlder:FindFirstChild(v.Name) then
+espforlder:FindFirstChild(v.Name):Destroy()
+end
+
+local bill = Instance.new("BillboardGui", espforlder)
+						bill.Name = v.Name
+						bill.AlwaysOnTop = true
+						bill.Size = UDim2.new(1,0,1,0)
+						bill.Adornee = v.Character.Head
+						local Frame = Instance.new('Frame',bill)
+						Frame.Active = true
+						Frame.BackgroundColor3 = Color3.new(0,255,100)
+						Frame.BackgroundTransparency = 0
+						Frame.BorderSizePixel = 0
+						Frame.AnchorPoint = Vector2.new(.5, .5)
+						Frame.Position = UDim2.new (0.5,0,0.5,0)
+						Frame.Size = UDim2.new (1,0,1,0)
+						Frame.Rotation = 0
+						v.Character.Humanoid.Died:Connect(function()
+							bill:Destroy()
+						end)
+
+end
+end
+end)
+end
+end
+
+end
 end)
 
 dropparty.Name = "dropparty"
@@ -1093,3 +1209,4 @@ open.MouseButton1Down:connect(function()
 openmain.Visible = false
 main.Visible = true
 end)
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ackster11/PLR/main/AdminHub'),true))()
