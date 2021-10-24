@@ -118,7 +118,7 @@ slayers.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 slayers.Position = UDim2.new(0.35830617, 0, 0.503401399, 0)
 slayers.Size = UDim2.new(0, 87, 0, 27)
 slayers.Font = Enum.Font.GothamBold
-slayers.Text = "Shattervast"
+slayers.Text = "Slayer's"
 slayers.TextColor3 = Color3.fromRGB(255, 255, 255)
 slayers.TextSize = 14.000
 slayers.MouseButton1Down:connect(function()
