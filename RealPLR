@@ -1017,7 +1017,7 @@ walkonwalls.Text = "Walk On Walls"
 walkonwalls.TextColor3 = Color3.fromRGB(255, 255, 255)
 walkonwalls.TextSize = 12.000
 walkonwalls.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/specowos/scripts/main/walk%20on%20walls"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ackster11/PLR/main/WalkOnWalls(NOT%20MINE).txt"))()
 end)
 
 nullware.Name = "nullware"
