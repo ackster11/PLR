@@ -4,8 +4,8 @@ local Players = game:GetService('Players')
 local Player = Players.LocalPlayer
 
 if Player.UserId == 2682720379 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ackster11/PLR/main/RealPLR"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ackster11/PLR/main/RealPLR.lua"))();
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 else
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ackster11/PLR/main/RealPLR"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ackster11/PLR/main/RealPLR.lua"))();
 end
