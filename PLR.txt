@@ -1,5 +1,3 @@
---If you want to see the code
---https://raw.githubusercontent.com/ackster11/PLR/main/RealPLR
 local Players = game:GetService('Players')
 local Player = Players.LocalPlayer
 
