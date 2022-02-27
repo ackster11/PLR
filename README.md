@@ -6,4 +6,4 @@ Here are all my links
 - https://github.com/ackster11/
 - https://wearedevs.net/profile?uid=69943
 
-My Guis suck, but they're better than any other free ones I've seen.
+Combining all the latest and greatest scripts into one gui.
