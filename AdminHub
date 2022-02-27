@@ -59,7 +59,7 @@ lpa.Text = "LP Admin"
 lpa.TextColor3 = Color3.fromRGB(255, 255, 255)
 lpa.TextSize = 14.000
 lpa.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/2WU4S2uG'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ackster11/PLR/main/lpa'),true))()
 end)
 
 septex.Name = "septex"
