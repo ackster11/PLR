@@ -1,4 +1,4 @@
--- Admin Hub v1.6. By aMan#2781
+-- Admin Hub v1.7. By @astro2781
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
@@ -9,7 +9,7 @@ local infyield = Instance.new("TextButton")
 local credits = Instance.new("TextLabel")
 local close = Instance.new("TextButton")
 local slayers = Instance.new("TextButton")
-local scorpion = Instance.new("TextButton")
+local tiger = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
 
@@ -32,7 +32,7 @@ title.Parent = main
 title.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 title.Size = UDim2.new(0, 307, 0, 27)
 title.Font = Enum.Font.GothamBold
-title.Text = "Admin Hub v1.6"
+title.Text = "Admin Hub v1.7"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 14.000
 
@@ -94,7 +94,7 @@ credits.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 credits.Position = UDim2.new(0, 0, 0.816326559, 0)
 credits.Size = UDim2.new(0, 307, 0, 27)
 credits.Font = Enum.Font.GothamBold
-credits.Text = "Made By aStro#2781"
+credits.Text = "Made By @astro2781"
 credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 credits.TextSize = 14.000
 
@@ -125,17 +125,17 @@ slayers.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ackster11/PLR/main/Slayers%20admin%20(NOT%20MINE)"))();
 end)
 
-scorpion.Name = "scorpion"
-scorpion.Parent = main
-scorpion.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
-scorpion.Position = UDim2.new(0.684039056, 0, 0.503401399, 0)
-scorpion.Size = UDim2.new(0, 87, 0, 27)
-scorpion.Font = Enum.Font.GothamBold
-scorpion.Text = "Scorpion"
-scorpion.TextColor3 = Color3.fromRGB(255, 255, 255)
-scorpion.TextSize = 14.000
-scorpion.MouseButton1Down:connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ackster11/PLR/main/Scorpion%20(NOT%20MINE)'))()
+tiger.Name = "tiger"
+tiger.Parent = main
+tiger.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+tiger.Position = UDim2.new(0.684039056, 0, 0.503401399, 0)
+tiger.Size = UDim2.new(0, 87, 0, 27)
+tiger.Font = Enum.Font.GothamBold
+tiger.Text = "Tiger"
+tiger.TextColor3 = Color3.fromRGB(255, 255, 255)
+tiger.TextSize = 14.000
+tiger.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/TigeradminREVAMP.txt'))()
 end)
 
 openmain.Name = "openmain"
